@@ -55,7 +55,7 @@ def install_from_requirements():
         run_pip_command(['install', '-r', req_file])
     else:
         print(f"{Colors.FAIL}Файл {req_file} не найден в текущей директории.{Colors.ENDC}")
-# -- новый функционал --
+
 def freeze_to_requirements():
     print("Сохранение списка пакетов в requirements.txt...")
     success, output = run_pip_command(['freeze'])
